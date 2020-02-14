@@ -1,0 +1,7 @@
+{%for field, value in infos %}
+	{% if value is not null %}
+	<div>
+	{{field}} : {{value}}
+	</div>
+	{% endif %}
+{% endfor %}

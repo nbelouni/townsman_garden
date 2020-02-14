@@ -1,0 +1,31 @@
+{% extends "base.html.twig" %}
+
+{% block body%}
+<p>{{debug}}</p>
+{% if plant is not null %}
+<div>
+	<div>
+	<p>Name : {{plant.commonNames}}</p>
+	<p>Latin : {{plant.botanicalNames}}</p>
+	<p>Url : {{plant.url}}</p>
+	<p>Family : {{plant.family}}</p>
+	<p>Type : {{plant.type}}</p>
+	<p>Flower Colors : {{plant.flowerColors}}</p>
+	<p>Leaves Colors : {{plant.LeavesColor}}</p>
+	<p>Leaves : {{plant.leaves}}</p>
+	<p>Shapes : {{plant.shape}}</p>
+	<p>Need Care : {{plant.needCare}}</p>
+	<p>Water : {{plant.water}}</p>
+	<p>Growth : {{plant.growth}}</p>
+	<p>Cold Resistance : {{plant.coldResistance}}</p>
+	<p>Soil : {{plant.soil}}</p>
+	<p>Soil PH : {{plant.soilPh}}</p>
+	<p>Soil Humidity : {{plant.soilHumidity}}</p>
+	<p>Sun : {{plant.sun}}</p>
+	<p>Places : {{plant.places}}</p>
+	<p>Weather : {{plant.weather}}</p>
+	<p>Density : {{plant.density}}</p>
+	</div>
+</div>
+{% endif %}
+{% endblock %}
